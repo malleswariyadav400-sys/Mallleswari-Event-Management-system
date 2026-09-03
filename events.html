@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Events | Malleswari Event Management</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h2>Malleswari Events</h2>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="events.html" class="active">Events</a>
+            <a href="my-events.html">My Events</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1>Our Events</h1>
+            <p>Discover and register for exciting upcoming events</p>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="events-section">
+
+        <h2>Upcoming Events</h2>
+
+        <p class="section-description">
+            Explore our upcoming events and choose the events
+            you would like to attend.
+        </p>
+
+        <!-- Search and Filter -->
+        <div class="event-controls">
+
+            <input
+                type="text"
+                id="searchEvent"
+                placeholder="Search events..."
+            >
+
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+                <option value="Technology">Technology</option>
+                <option value="Cultural">Cultural</option>
+                <option value="Sports">Sports</option>
+                <option value="Education">Education</option>
+                <option value="Workshop">Workshop</option>
+            </select>
+
+        </div>
+
+        <!-- Events Container -->
+        <div class="events-container" id="eventsContainer">
+
+            <!-- Event 1 -->
+            <div class="event-card" data-category="Technology">
+
+                <img src="images/event1.jpg"
+                     alt="Technology Conference">
+
+                <div class="event-card-content">
+
+                    <span class="event-category">
+                        Technology
+                    </span>
+
+                    <h3>Technology Conference 2026</h3>
+
+                    <p>
+                        Explore modern technologies, innovations
+                        and exciting ideas.
+                    </p>
+
+                    <p>
+                        <strong>📅 Date:</strong>
+                        20 August 2026
+                    </p>
+
+                    <p>
+                        <strong>📍 Location:</strong>
+                        College Auditorium
+                    </p>
+
+                    <a href="event-detail.html"
+                       class="btn"
+                       onclick="viewEvent(1)">
+                        View Details
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Event 2 -->
+            <div class="event-card" data-category="Cultural">
+
+                <img src="images/event2.jpg"
+                     alt="Cultural Festival">
+
+                <div class="event-card-content">
+
+                    <span class="event-category">
+                        Cultural
+                    </span>
+
+                    <h3>Cultural Festival</h3>
+
+                    <p>
+                        Enjoy music, dance, traditional performances
+                        and cultural activities.
+                    </p>
+
+                    <p>
+                        <strong>📅 Date:</strong>
+                        25 August 2026
+                    </p>
+
+                    <p>
+                        <strong>📍 Location:</strong>
+                        Open Auditorium
+                    </p>
+
+                    <a href="event-detail.html"
+                       class="btn"
+                       onclick="viewEvent(2)">
+                        View Details
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Event 3 -->
+            <div class="event-card" data-category="Sports">
+
+                <img src="images/event3.jpg"
+                     alt="Sports Meet">
+
+                <div class="event-card-content">
+
+                    <span class="event-category">
+                        Sports
+                    </span>
+
+                    <h3>Annual Sports Meet</h3>
+
+                    <p>
+                        Participate in exciting sports competitions
+                        and activities.
+                    </p>
+
+                    <p>
+                        <strong>📅 Date:</strong>
+                        30 August 2026
+                    </p>
+
+                    <p>
+                        <strong>📍 Location:</strong>
+                        College Sports Ground
+                    </p>
+
+                    <a href="event-detail.html"
+                       class="btn"
+                       onclick="viewEvent(3)">
+                        View Details
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Event 4 -->
+            <div class="event-card" data-category="Education">
+
+                <img src="images/event4.jpg"
+                     alt="Education Seminar">
+
+                <div class="event-card-content">
+
+                    <span class="event-category">
+                        Education
+                    </span>
+
+                    <h3>Career Guidance Seminar</h3>
+
+                    <p>
+                        Get useful guidance about careers,
+                        higher education and opportunities.
+                    </p>
+
+                    <p>
+                        <strong>📅 Date:</strong>
+                        5 September 2026
+                    </p>
+
+                    <p>
+                        <strong>📍 Location:</strong>
+                        Seminar Hall
+                    </p>
+
+                    <a href="event-detail.html"
+                       class="btn"
+                       onclick="viewEvent(4)">
+                        View Details
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Event 5 -->
+            <div class="event-card" data-category="Workshop">
+
+                <img src="images/event5.jpg"
+                     alt="Coding Workshop">
+
+                <div class="event-card-content">
+
+                    <span class="event-category">
+                        Workshop
+                    </span>
+
+                    <h3>Web Development Workshop</h3>
+
+                    <p>
+                        Learn the basics of HTML, CSS and JavaScript
+                        through practical activities.
+                    </p>
+
+                    <p>
+                        <strong>📅 Date:</strong>
+                        10 September 2026
+                    </p>
+
+                    <p>
+                        <strong>📍 Location:</strong>
+                        Computer Lab
+                    </p>
+
+                    <a href="event-detail.html"
+                       class="btn"
+                       onclick="viewEvent(5)">
+                        View Details
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Event 6 -->
+            <div class="event-card" data-category="Technology">
+
+                <img src="images/event6.jpg"
+                     alt="AI Workshop">
+
+                <div class="event-card-content">
+
+                    <span class="event-category">
+                        Technology
+                    </span>
+
+                    <h3>Artificial Intelligence Workshop</h3>
+
+                    <p>
+                        Learn about AI concepts, applications
+                        and emerging technologies.
+                    </p>
+
+                    <p>
+                        <strong>📅 Date:</strong>
+                        15 September 2026
+                    </p>
+
+                    <p>
+                        <strong>📍 Location:</strong>
+                        Computer Science Lab
+                    </p>
+
+                    <a href="event-detail.html"
+                       class="btn"
+                       onclick="viewEvent(6)">
+                        View Details
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            &copy; 2026 Malleswari Event Management System.
+            All Rights Reserved.
+        </p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
+```

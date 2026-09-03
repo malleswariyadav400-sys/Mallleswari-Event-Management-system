@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Event Registration | Malleswari Event Management</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h2>Malleswari Events</h2>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="events.html">Events</a>
+            <a href="my-events.html">My Events</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1>Event Registration</h1>
+            <p>Register for your favorite event</p>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section class="registration-section">
+
+        <div class="registration-container">
+
+            <!-- Registration Information -->
+            <div class="registration-info">
+
+                <h2>Join Our Event</h2>
+
+                <p>
+                    Fill in the form to register for an upcoming
+                    event. Your registration will be saved in your
+                    browser.
+                </p>
+
+                <div class="registration-benefits">
+
+                    <div class="benefit">
+                        <span>✓</span>
+                        <p>Simple and quick registration</p>
+                    </div>
+
+                    <div class="benefit">
+                        <span>✓</span>
+                        <p>View your registered events</p>
+                    </div>
+
+                    <div class="benefit">
+                        <span>✓</span>
+                        <p>No account required</p>
+                    </div>
+
+                    <div class="benefit">
+                        <span>✓</span>
+                        <p>Easy event management</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Registration Form -->
+            <div class="registration-form">
+
+                <h2>Registration Form</h2>
+
+                <form id="registrationForm">
+
+                    <!-- Full Name -->
+                    <div class="form-group">
+
+                        <label for="fullName">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter your phone number"
+                            pattern="[0-9]{10}"
+                            maxlength="10"
+                            required
+                        >
+
+                    </div>
+
+                    <!-- Event -->
+                    <div class="form-group">
+
+                        <label for="event">
+                            Select Event
+                        </label>
+
+                        <select
+                            id="event"
+                            name="event"
+                            required
+                        >
+
+                            <option value="">
+                                -- Select an Event --
+                            </option>
+
+                            <option value="Technology Conference 2026">
+                                Technology Conference 2026
+                            </option>
+
+                            <option value="Cultural Festival">
+                                Cultural Festival
+                            </option>
+
+                            <option value="Annual Sports Meet">
+                                Annual Sports Meet
+                            </option>
+
+                            <option value="Career Guidance Seminar">
+                                Career Guidance Seminar
+                            </option>
+
+                            <option value="Web Development Workshop">
+                                Web Development Workshop
+                            </option>
+
+                            <option value="Artificial Intelligence Workshop">
+                                Artificial Intelligence Workshop
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <!-- Number of Participants -->
+                    <div class="form-group">
+
+                        <label for="participants">
+                            Number of Participants
+                        </label>
+
+                        <input
+                            type="number"
+                            id="participants"
+                            name="participants"
+                            min="1"
+                            max="10"
+                            value="1"
+                            required
+                        >
+
+                    </div>
+
+                    <!-- College / Organization -->
+                    <div class="form-group">
+
+                        <label for="organization">
+                            College / Organization
+                        </label>
+
+                        <input
+                            type="text"
+                            id="organization"
+                            name="organization"
+                            placeholder="Enter college or organization"
+                        >
+
+                    </div>
+
+                    <!-- Message -->
+                    <div class="form-group">
+
+                        <label for="message">
+                            Additional Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="4"
+                            placeholder="Enter any additional information"
+                        ></textarea>
+
+                    </div>
+
+                    <!-- Terms -->
+                    <div class="checkbox-group">
+
+                        <input
+                            type="checkbox"
+                            id="terms"
+                            name="terms"
+                            required
+                        >
+
+                        <label for="terms">
+                            I agree to the event registration
+                            terms and conditions.
+                        </label>
+
+                    </div>
+
+                    <!-- Submit -->
+                    <button
+                        type="submit"
+                        class="btn"
+                    >
+                        Register Now
+                    </button>
+
+                    <!-- Success / Error Message -->
+                    <div
+                        id="registrationMessage"
+                        class="registration-message"
+                    ></div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Registration Steps -->
+    <section class="steps-section">
+
+        <h2>How Registration Works</h2>
+
+        <div class="steps-container">
+
+            <div class="step-card">
+
+                <div class="step-number">1</div>
+
+                <h3>Choose Event</h3>
+
+                <p>
+                    Select your favorite event from the
+                    registration form.
+                </p>
+
+            </div>
+
+            <div class="step-card">
+
+                <div class="step-number">2</div>
+
+                <h3>Fill Details</h3>
+
+                <p>
+                    Enter your personal and event
+                    registration details.
+                </p>
+
+            </div>
+
+            <div class="step-card">
+
+                <div class="step-number">3</div>
+
+                <h3>Submit</h3>
+
+                <p>
+                    Click Register Now to complete
+                    your registration.
+                </p>
+
+            </div>
+
+            <div class="step-card">
+
+                <div class="step-number">4</div>
+
+                <h3>View My Events</h3>
+
+                <p>
+                    Check your registered events on
+                    the My Events page.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            &copy; 2026 Malleswari Event Management System.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
+```
